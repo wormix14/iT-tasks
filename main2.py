@@ -1,8 +1,9 @@
 from http.server import HTTPServer, BaseHTTPRequestHandler
 from urllib.parse import urlparse, parse_qs
+import os
 
 HOST = "0.0.0.0"
-PORT = 8000
+PORT = int(os.getenv("PORT", 8000))
 
 def lcm(x: int, y: int):
     if x == 0 or y == 0:
