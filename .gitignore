@@ -1,3 +1,4 @@
 venv/
 lcs.js
 /main.py
+__pycache__/
